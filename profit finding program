@@ -1,0 +1,33 @@
+#include<iostream.h>
+#include<conio.h>
+#include<process.h>
+void main()
+{
+   clrscr();
+   e:
+   cout <<"\n Enter the CP:";
+   int CP;
+   cin >> CP;
+   cout <<"\n Enter the SP:";
+   int SP;
+   cin >> SP;
+   if (CP>SP)
+   {
+     int a=CP-SP;
+     cout <<"\n Sorry you got loss,loss=" << a ;
+   }
+   else if (SP>CP)
+   {
+     int a1=SP-CP;
+     cout <<"\n Hurry you got Profit!,Profit=" << a1;
+   }
+   else if (SP==CP)
+   {
+     cout <<"\n You gain nothing!";
+   }
+   else
+   {
+    cout << "\n Sorry the program stopped working let's try again";
+    goto e;
+   }
+   getch();
